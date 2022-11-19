@@ -1,0 +1,83 @@
+body{
+    font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif;  
+}
+
+.one{
+    border: none;
+    width: 350px;
+    height: 375px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow:  0px 2px 4px #888888;
+    margin: auto;
+    margin-top: 10%;
+    text-align:center;
+}
+
+#email{
+    margin: 15px 8px 10px; 
+}
+
+#password, #confirmpwd, #email, #signup, #google {
+    width: 85%;
+    border-radius: 5px;
+    padding: 10px 10px ;
+    margin: 8px 10px; 
+    font-size: 15px;
+    border: 1px solid #ccc;    
+}
+
+#signup{ 
+    width: 90%;
+    color: white;
+    font-weight:bold;
+    font-size: 17px;
+    border: none;
+    background-color: rgb(251, 107, 50);
+}
+
+#google img{
+    height: 20px;
+    width: 20px;
+    float: left;
+}
+#google{
+    width: 90%;
+    font-size: 15px;
+    border: none;
+}
+
+.login a{
+    color: rgb(251, 107, 50) ;
+}
+.login a:link{
+    text-decoration: none;   
+}
+.login a:hover { 
+   text-decoration: none;
+}
+
+.hr-lines {
+    overflow: hidden;
+    text-align: center;
+    font-size: small;
+    font-weight: lighter;
+}
+.hr-lines:before,
+.hr-lines:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 40%;
+}
+.hr-lines:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+.hr-lines:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
