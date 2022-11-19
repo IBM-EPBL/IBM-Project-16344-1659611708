@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction</title>
+    <link rel="stylesheet" href="../static/predict.css">
+</head>
+<body>
+    <div>
+		<h1 style="text-align:center;">Crop Yield Prediction</h1>
+        <h3 style="text-align:center;">Please enter the patient details</h3>
+	</div>
+    <form action="{{ url_for('prediction')}}" method="POST" class="form-inline">
+        <fieldset>
+            <div class="tabcontent" id="new">
+                 <div class="form-group">
+                    <label for="State">State</label>
+                    <input class="form-control" type="text" name="State" required="required"/>
+                 </div>
+                  <div class="form-group">
+                    <label for="Season">Season </label>
+                    <input class="form-control" type="text" name="Season" required="required"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="Crop">Crop</label>
+                    <input class="form-control" type="text" name="Crop"required="required"/>
+                  </div>
+                  <div class="form-grop">
+                    <label for="Area">Area</label>
+                    <input class="form-control" type="number" name="Area"required="required"/>
+                  </div>
+                  <div class="form-grop">
+                    <label for="percent_of_production">Percent Of Production</label>
+                    <input class="form-control" type="number" step="any" name="percent_of_production"required="required"/>
+                  </div>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <button type="submit" class="btn btn-primary btn-lg">Predict</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
